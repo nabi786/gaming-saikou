@@ -1,0 +1,1518 @@
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+
+}
+
+
+
+:root{
+    --main-giloyBoldFonts:gilorybold;
+    --main-thirdFonts:NHaasGroteskDSPro55Rg;
+    --main-secondFonts:hundredligattureregular;
+    --main-basicFonts:giloryThin;
+    --main-FirstColor: white;
+    --main-BoxInnerColor:#1e1e1e;
+    --main-hoverColor:#353535;
+    --main-fontgrayColor: #adadad;
+    --main-backgroundColor: #1a1a1a;
+    --mina-fonts: sans-serif;
+}
+
+body{
+    background-color: var(--main-backgroundColor);
+    color: var(--main-FirstColor);
+    font-family: var(--main-thirdFonts);
+}
+
+a{
+    text-decoration: none !important;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+
+
+.container{
+    padding: 0px !important;
+}
+.mainTopHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    font-family: var(--main-basicFonts);
+    height: 115px;
+}
+
+.searchField{
+    position: relative;
+    width: 300px;
+}
+.searchField button{
+    position: absolute;
+    top: 50%;
+    left: 6%;
+    transform: translate(-50%,-50%);
+    background-color: var(--main-BoxInnerColor);
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.searchField button:focus{
+    outline: none;
+}
+.searchField input{
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 11px 11px 11px 35px;
+    color: var(--main-fontgrayColor);
+    background-color: var(--main-BoxInnerColor);
+    border: none;
+}
+
+.searchField input:focus{
+    outline: none;
+}
+.searchField input::placeholder{
+    font-size: 14px;
+    font-family: var(--main-basicFonts);
+    color: var(--main-fontgrayColor);
+    font-weight: 600;
+}
+
+.logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.singInOption a:nth-child(2){
+    border: 1px solid var(--main-fontgrayColor);
+    padding: 8px 22px;
+    color: var(--main-fontgrayColor);;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 20px;
+    font-weight: 600;
+}
+.singInOption a:nth-child(2):hover{
+    background-color: var(--main-hoverColor);
+    
+}
+
+.singInOption a:nth-child(1){
+    text-decoration: none;
+    /* border: 1px solid red; */  
+}
+
+.singInOption a:nth-child(1) img{
+    width: 30px;
+}
+.singInOption div a{
+    font-family: var(--main-basicFonts);
+}
+
+
+/* navigation box */
+.navigationBox{
+    background-color: var(--main-BoxInnerColor);
+    display: flex;
+    align-items: center;
+}
+
+.navigation{
+    
+    margin: 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 580px;
+    margin: auto;
+    
+}
+.navigation a{
+    font-family: var(--main-basicFonts);
+    font-weight: 600;
+    color: var(--main-fontgrayColor);
+    padding: 20px 12px;
+    text-align: center;
+    font-size: 16px;
+}
+.navigation a:hover{
+    color: white;
+    background: linear-gradient(var(--main-hoverColor), var(--main-BoxInnerColor));
+}
+
+
+
+
+
+/* main hero section */
+.mainHeroSection{
+    width: 100%;
+    height: 1000px;
+    background-position: center;
+    /* border: 1px solid red; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:100% 100%;
+    position: relative;
+}
+.heroSectionWidthBox{
+    /* border: 1px solid red; */
+    max-width: 1300px;
+    min-width: auto;
+    margin: auto;
+    position: relative;
+    height: 100%;
+}
+
+.heroSectionContent{
+     position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.heroSectionContent h2{
+    font-size: 100px;
+    margin: 70px 0px;
+    font-family: var(--main-secondFonts); 
+    text-shadow: -7px 11px 8px rgba(0, 0, 0, 0.5);
+}
+
+.heroSectionContent p{
+    font-size: 50px;
+    font-family: var(--main-thirdFonts); 
+
+}
+
+.heroSectionContent a{
+    font-size: 34px;
+    background-color: #7d0909;
+    text-decoration: none;
+    color: white;
+    padding: 8px 20px;
+    font-family: var(--main-secondFonts); 
+
+}
+.navigationBox{
+    justify-content: flex-end;
+}
+
+.responsiveMenu button{
+    border: none;
+    background-color: var(--main-BoxInnerColor);
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    display: none;
+   
+}
+.responsiveMenu button:focus{
+    outline: none;
+}
+.closeResMenu{
+    display: none;
+}
+
+.logo2{
+    display: none;
+}
+
+
+
+
+
+.playBtnOuterBox{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 80%;
+    left: 88%;
+    transform: translate(-50%,-50%);
+  
+}
+
+.btnanimFlow{
+    width: 90px;
+    height: 90px;
+    border-radius: 50px;
+    border: 1px solid white;
+    position: absolute;
+    animation-name: btnflow;
+    animation-duration: 2s;
+    border: 1px solid white;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes btnflow {
+    0%{
+        transform: scale(1);
+      
+    }100%{
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
+
+.playBtn{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    position: absolute;
+    background-color: #7d0909;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+.playBtn::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 49%;
+    background-color: #9d1414;
+    z-index: 1;
+}
+
+.playBtn span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1111;
+    font-size: 20px;
+}
+
+
+
+.sectiontionTitle{
+    text-align: center;
+    position: relative;
+    font-family: var(--main-secondFonts);
+    margin-bottom: 50px;
+}
+.sectiontionTitle h2{
+    font-size: 40px;
+}
+
+
+.imageGallary{
+    display: flex;
+    padding: 0px 45px;
+    justify-content: space-between;
+}
+.imgBox{
+    position: relative;
+    overflow: hidden;
+}
+.imgBox img{
+    width: 100%;
+}
+
+.imgBox::after{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: 0.5s;
+    
+}
+.imgBox:hover::after{
+    opacity: 1;
+}
+
+.imgesBoxRow{
+    width: 29.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.imgesBoxRow:nth-child(2){
+    width: 36%;
+}
+.imgesBoxRow .imgBox:first-child{
+    margin-bottom: 30px;
+}
+
+.linkBtn{
+ 
+    position: absolute;
+    left: 50%;
+    bottom: -50px;
+    transform: translate(-50%,-50%);
+    z-index: 11;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background: white;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.5s;
+
+}
+
+.imgBox:hover .linkBtn{
+    bottom: 0px;
+    opacity: 1;
+}
+
+.linkBtn::after{
+    content: "";
+    width: 130%;
+    height: 350%;
+    background-color: #e6e6e6;
+    position: absolute;
+    left: 60px;
+    top: 30%;
+    z-index: -1;
+     transform: rotateZ(-25deg);
+    transition: 0.5s;
+   
+}
+.linkBtn:hover::after{
+    top: 30%;
+    left: 100%; 
+}
+.linkBtn a{
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    color: black;
+    font-family: var(--main-secondFonts);
+    font-size: 18px;
+}
+
+
+.parentSection{
+    position: relative;
+    margin-top: 50px;
+}
+.xmark{
+    position: absolute;
+}
+.xmark1{
+    top: 5%;
+    right: 11%;
+}
+.xmark2{
+    bottom: 5%;
+    left: 16%;
+    width: 40px;
+}
+
+.circle1{
+    bottom: -4%;
+    right: 13%;
+}
+
+.sectiontionTitle2{
+    text-align: left;
+}
+
+.sectiontionTitle2  img{
+    left: 19.6%;
+}
+
+
+
+.carouselItemBox{
+    /* border: 1px solid white; */
+    margin: 15px;
+}
+.carouselItemImg img{
+    width: 100%;
+}
+
+.carouselItemContent{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+.carouselItemContent span{
+    display: block;
+    font-family: var(--main-thirdFonts);
+    color: var(--main-fontgrayColor);
+}
+.carouselItemContent span:first-child{
+    font-size: 24px;
+}
+
+.carouselItemContent span:last-child{
+    font-size: 16px;
+}
+
+.carouselItemContentBtn{
+   
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.carouselItemContentBtn a{
+    color: var(--main-fontgrayColor);
+    border: 1px solid var(--main-fontgrayColor);
+    font-family: var(--main-basicFonts);
+    font-weight: 600;
+    padding: 8px 35px;
+    font-size: 16px;
+}
+
+.carouselItemContentBtn a:hover{
+    background-color: var(--main-hoverColor);
+}
+
+
+
+.slick-arrow{
+    position: absolute;
+    top: -80px;
+    right: 1%;
+}
+
+.rightArrow{
+    right: 5% !important;
+}
+.rightArrow, .leftArrow{
+    background-color: var(--main-backgroundColor);
+    border: none;
+}
+.rightArrow, .leftArrow:focus{
+    outline: none !important;
+}
+
+.carouselBox{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+
+.section1WithBackground{
+    background-position: center;
+    max-width: 1920px;
+    min-width: auto !important;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    /* border: 1px solid red; */
+    
+}
+.backgroundImge{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 100%;
+    z-index: -1;  
+    
+}
+
+.section3{
+    margin-top: 120px;
+}
+.section3Row{
+    display: flex;
+    
+}
+.section3Col{
+    width: 50%;
+}
+
+
+
+.section3Col2 .sectiontionTitle{
+    margin-bottom: 0px;
+   
+    display: flex;
+    justify-content: flex-start;
+}
+.section3Col2 .sectiontionTitle h2{
+    margin-bottom: 30px;
+    text-align: left !important;
+    margin-top: 0px;
+    font-family: var(--main-secondFonts);
+    font-size: 40px;
+}
+.section3Col2{
+    padding: 0px 46px;
+}
+
+.section3Col2 p{
+    font-size: 16px;
+    font-family: var(--main-thirdFonts);
+    line-height: 30px;
+    margin-bottom: 0px;
+}
+
+
+
+.section3{
+    position: relative;
+
+}
+.section3Col1{
+    position: relative;
+    z-index: 11;
+}
+.section3Col1 .linkBtn{
+    width: 115px;
+    left: 80% !important;
+    bottom: 8% !important;
+    height: 45px;
+    
+    background-color: white !important;
+    opacity: 1;
+}
+.section3Col1 .linkBtn a{
+    font-family: var(--main-giloyBoldFonts);
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.section3Col1AbsoluteCanva{
+    position: absolute;
+    left: 42%;
+    top: 55%;
+    z-index: -1;
+}
+
+
+.section4{
+    margin-top: 120px;
+}
+
+
+.section4Row{
+    display: flex;
+    justify-content: space-between;
+}
+.section4Col{
+    width: 50%;
+   
+    margin: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.section4Col img{
+    width: 100%;
+}
+
+.sec4Content .carouselItemContent{
+    flex-direction: column;
+    padding: 0px;
+    padding-top: 34px;
+}
+
+
+.sec4Content .carouselItemContent .carouselItemContentBtn{
+  
+    justify-content: flex-start;
+}
+
+.sec4Content .carouselItemContent span:nth-child(2){
+    line-height: 30px;
+    margin: 27px 0px;
+    font-size: 500;
+ 
+}
+.sec4Content .carouselItemContent span:nth-child(1){
+
+    font-size: 30px;
+    color: white;
+}
+
+
+
+.section5Row{
+    display: flex;
+    justify-content: space-between;
+}
+.section5Col1{
+    width: 28% !important;
+}
+.section5Col1 img{
+    width: 100%;
+}
+
+.section5{
+    margin-top: 80px;
+}
+.section5 .carouselItemContent{
+    padding-top: 0px;
+    /* border: 1px solid red; */
+    padding: 0px 10px;
+}
+.carouselItemContentlast{
+    padding: 0px 15px !important;
+}
+
+.section5Col .carouselItemContentBtn a{
+    flex-grow: 1;
+    text-align: center;
+}
+
+.section5Col .carouselItemContent span:nth-child(1){
+    font-family: var(--main-thirdFonts);
+    font-size: 22px;
+}
+
+.section5Col .carouselItemContent span:nth-child(2){
+  
+    font-size: 14px;
+    margin: 15px 0px;
+    line-height: 20px;
+}
+
+
+.section6{
+    margin-top: 80px;
+}
+
+
+footer{
+    color: var(--main-fontgrayColor);
+    position: relative;
+}
+
+.footerLinks{
+    margin: 0px;
+    display: flex;
+    justify-content: flex-start;
+}
+.footerLinks li a{
+    color: var(--main-fontgrayColor);
+    font-family: var(--main-thirdFonts);
+    font-size: 14px;
+}
+.footerLinks li{
+    padding: 3px 0px;
+}
+.footerLinkBox{
+    width: 300px;  
+}
+
+.footerDiv{
+    margin-top: 30px;
+}
+.footerDiv:first-child{
+    margin-top: 0px;
+}
+
+.footerCopyRightDiv{
+    display: flex;
+    padding-bottom: 30px;
+}
+
+.footerCopyRightDiv span:last-child{
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+.footerCopyRightDiv span{
+    font-family: var(--main-thirdFonts);
+    margin-right: 30px;
+    font-size: 14px;
+}
+
+.footerDivperagraph p{
+    font-family: var(--main-thirdFonts);
+    line-height: 25px;
+    font-size: 14px;
+}
+.sectiontionTitle h2{
+    /* border: 1px solid red; */
+    display: inline-block;
+    position: relative;
+}
+.sectiontionTitle span{
+    position: absolute;
+    top:15px;
+    right: -12px;
+    z-index: -1;
+}
+
+
+
+.footerCircleBox{
+    
+    border-radius: 50px;
+    width: 50px;
+    position: absolute;
+    right: 0%;
+    bottom: 24%;
+    cursor: pointer;
+}
+.footerCircleBox img{
+    width: 100%;
+}
+.footerCircleBox:hover{
+    background-color: var(--main-hoverColor);
+}
+
+.carouselButtons{
+    width: 80px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    right: 1%;
+    top: -21%;
+    cursor: pointer;
+}
+.carouselButtons img{
+    border-radius: 50px;
+}
+.carouselButtons img:hover{
+    background-color: var(--main-hoverColor);
+}
+
+.singInOptionNav{
+    display: none;
+}
+
+.navContainer .searchField{
+    display: none;
+}
+
+
+.section3Col2 .sectiontionTitle{
+    position: relative;
+    z-index: 111;
+}
+.section3Col2 .sectiontionTitle span{
+    z-index: -1 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive Menu */
+
+
+@media only screen and (max-width:4000px){
+    .mainHeroSection{
+        height: 2500px;
+        background-size: cover;
+       
+    }
+}
+
+@media only screen and (max-width:3500px){
+    .mainHeroSection{
+        height: 2260px;
+        background-size: cover;
+       
+    }
+}
+
+@media only screen and (max-width:3500px){
+    .mainHeroSection{
+        height: 2260px;
+        background-size: cover;
+       
+    }
+}
+
+@media only screen and (max-width:3200px){
+    .mainHeroSection{
+        height: 2080px;
+        background-size: cover;
+       
+    }
+}
+
+@media only screen and (max-width:3000px){
+    .mainHeroSection{
+        height: 1940px;
+        background-size: cover;
+       
+    }
+}
+
+@media only screen and (max-width:2800px){
+    .mainHeroSection{
+        height: 1800px;
+        background-size: cover;
+       
+    }
+}
+
+@media only screen and (max-width:2500px){
+    .mainHeroSection{
+        height: 1640px;
+        background-size: cover;
+       
+    }
+}
+
+@media only screen and (max-width:2200px){
+    .mainHeroSection{
+        height: 1435px;
+        background-size: cover;
+       
+    }
+}
+
+
+
+@media only screen and (max-width:2000px){
+    .mainHeroSection{
+        height: 1320px;
+        background-size: cover;
+       
+    }
+}
+
+@media only screen and (max-width:1920px){
+    .mainHeroSection{
+        height: 1250px;
+        background-size: cover;
+       
+    }
+    .backgroundImge{
+        width: 100%;
+    }
+    .xmark2{
+        left: 5%;
+    }
+}
+
+@media only screen and (max-width:1800px){
+    .mainHeroSection{
+        height: 1170px;
+        background-size: cover;
+    }
+    
+}
+
+@media only screen and (max-width:1700px){
+    .mainHeroSection{
+        height: 1120px;
+        background-size: cover;
+       
+    }
+}
+
+@media only screen and (max-width:1600px){
+    .mainHeroSection{
+        height: 1050px;
+        background-size: cover;
+       
+    }
+    .section1WithBackground{
+        background-size: 120% 100%;
+    }
+}
+
+@media only screen and (max-width:1500px){
+    .mainHeroSection{
+        height: 980px;
+        background-size: cover;
+       
+    }
+   
+   
+}
+
+@media only screen and (max-width:1400px){
+    .mainHeroSection{
+        height: 925px;
+        background-size: cover;
+       
+    }
+    .backgroundImge{
+        width: auto;
+    }
+}
+
+@media only screen and (max-width:1300px){
+    .mainHeroSection{
+        height: 850px;
+        background-size: cover;
+       
+    }
+    .section1WithBackground{
+        background-size: 125% 100%;
+    }
+}
+
+@media only screen and (max-width:1200px){
+    .section3Col2{
+        padding: 20px;
+    }
+    .section3Col1 img:first-child{
+        width: 100%;
+    }
+    .section3Col2 .sectiontionTitle h2{
+        margin-bottom: 20px;
+    }
+    .mainHeroSection{
+        height: 780px;
+        background-size: cover;
+       
+    }
+}
+
+
+@media only screen and (max-width:1100px){
+    .playBtnOuterBox{
+        left: 80%;
+    }
+    .mainHeroSection{
+        height: 725px;
+        background-size: cover;
+       
+    }
+}
+
+@media only screen and (max-width:1000px){
+     .mainHeroSection{
+        background-size: 1000px 850px !important;
+        background-position-y: 82% !important;
+
+    }
+    
+    .mainHeroSection{
+        height: 650px;
+    }
+    .heroSectionContent {
+        left: 50%;
+        top: 50%;
+    }
+    .section1WithBackground{
+        background-size: 295% 100%;
+    }
+    .imageGallary{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .imgesBoxRow .imgBox:first-child{
+        margin-bottom: 0px;
+    }
+    .imgesBoxRow{
+        width: 50% !important;
+    }
+    .imgBox{
+        margin-bottom: 30px !important;
+    }
+    .sectiontionTitle2{
+        text-align: center;
+    }
+    .carouselBox{
+        flex-direction: column;
+        width: 80%;
+        position: relative !important;
+        margin: auto;
+    }
+  
+   
+    .section3Row{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section4Row{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .section4Col{
+        margin-top: 50px;
+        width: 80%;
+    }
+    .section4Col:first-child{
+        margin-top: 0px;
+    }
+
+    .section5Row{
+        flex-direction: column;
+        align-items: center;
+    }
+    .section5Col{
+       margin-top: 50px;
+       width: 50% !important;
+    }
+    .section5Col:first-child{
+        margin-top: 0px;
+    }
+
+    .section3Col2{
+        width: 80%;
+    }
+    .section3Col1{
+        width: 80%;
+    }
+    .section3Col1AbsoluteCanva{
+        width: 50%;
+        left: 0%;
+    }
+
+    .section4, .section3, .section4, .section5, .section6{
+        margin-top: 50px !important;
+    }
+   
+    .carouselButtons{
+       position: relative;
+       margin: auto;
+       right: 0px;
+       top: 0px;
+    }
+
+    .circle1{
+        bottom: 0%;
+        right: 25%;
+    }
+    
+}
+
+@media only screen and (max-width:992px){
+    .rightArrow {
+        right: 10% !important;
+    }
+    
+
+}
+
+
+
+@media only screen and (max-width:950px){
+    .heroSectionContent h2{
+        margin: 20px 0px  !important;
+    }
+    .heroSectionContent p{
+        margin-bottom: 0px;
+    }
+    .heroSectionContent{
+        top: 40%;
+    }
+    .playBtnOuterBox{
+        width: 150px;
+        height: 150px;
+    }
+    @keyframes btnflow {
+        0%{
+            transform: scale(1);
+          
+        }100%{
+            transform: scale(1.5);
+            opacity: 0;
+        }
+    }
+    
+}
+
+
+
+
+
+
+@media only screen and (max-width:800px){
+
+    .imgesBoxRow{
+        width: 100% !important;
+
+    }
+    .imgBox{
+        width: 100%;
+    }
+
+}
+
+
+
+@media only screen and (max-width:770px){
+    .mainTopHeader{
+        display: none;
+    }
+    .navContainer{
+        background-color: var(--main-BoxInnerColor);
+        /* border: 1px solid red; */
+        padding-bottom: 15px !important;
+    }
+    .navContainer .searchField{
+        display: block;
+        /* border: 1px solid white; */
+        width: 90%;
+        margin: auto;
+        border-bottom: 1px solid var(--main-fontgrayColor);
+    }
+ 
+    .navContainer .searchField button{
+        left: 2%;
+    }
+    
+   
+    .mainTopHeader{
+        height: auto;
+        padding: 20px;
+    }
+    .playBtn{
+        width: 60px  !important;
+        height: 60px;
+    }
+    .btnanimFlow{
+        width: 70px;
+        height: 70px;
+    }
+    .navigationBox{
+        /* border: 1px solid red; */
+        padding: 15px 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .navigation{
+        justify-content: flex-start;
+    }
+    .responsiveMenu{
+        /* border: 1px solid white; */
+        display: flex !important;
+        
+    }
+    .responsiveMenu button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid white; */
+        height: 45px;
+    }
+    .responsiveMenu button i{
+        position: relative;
+    }
+    .responsiveMenu button i::before{
+        margin-top: -10px;
+    }
+    .logo2{
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo2 img{
+        width: 100%;
+    }
+    .singInOption{
+        display: none;
+
+    }
+    .singInOptionNav{
+        display: block;
+        margin-left: auto;
+        padding: 0px !important;
+        /* border: 1px solid white; */
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        height: 45px;
+        padding-top: 5px !important;
+    }
+    .singInOptionNav div a:last-child{
+        margin: 0px 20px;
+        padding: 4px 22px;
+        
+    }
+
+    .singInOption{
+        padding: 20px 12px;
+    }
+    .navigationBox{
+        justify-content: space-between;
+    }
+    .logo{
+        display: none;
+    }
+    .logo2{
+        display: block;
+    }
+    .responsiveMenu button{
+        display: block;
+       
+    }
+    .heroSectionContent{
+        top: 40%;
+    }
+
+    .navigation{
+        position: fixed;
+        top: 0%;
+        right: -100%;
+        width: 50%;
+        height: 100%;
+        flex-direction: column;
+        background-color: var(--main-BoxInnerColor);
+        z-index: 111;
+        overflow: auto;
+        transition: 1s;
+    }
+
+    .showResMenu{
+        right:0px;
+    }
+    .closeResMenu{
+        width: 30px;
+        height: 30px;
+        margin-left: auto;
+        margin-top: 20px;
+        margin-right: 20px;
+        background-color: var(--main-BoxInnerColor);
+        border: none;
+        font-size: 20px;
+        display: block;
+    }
+    .closeResMenu:focus{
+        outline: none;
+    }
+    .mainHeroSection{
+        background-position: 60% -50%;
+        background-size: cover 100%;
+        background-position-y: 20%;
+    }
+    .playBtnOuterBox{
+        left: 50%;
+        top: 82%;
+    }
+
+    .backgroundImge{
+        left: 65%;
+    }
+
+
+}
+
+
+
+@media only screen and (max-width:610px){
+    .sectiontionTitle h2{
+        font-size: 6vw;
+    }
+   
+    .section3Col2  .sectiontionTitle h2{
+        font-size: 6vw !important;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .mainTopHeader{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .section1WithBackground{
+        background-size: 400% 100%;
+    }
+    .sectiontionTitle{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .slick-arrow{
+        top: -10%;
+       
+    }
+    .rightArrow {
+        left: 40%;
+    }
+    .leftArrow{
+        right: 40%;
+    }
+    footer{
+        padding: 0px 20px;
+    }
+    .footerCircleBox{
+        right: 10%;
+        bottom: 15%;
+    }
+    .heroSectionContent h2{
+        font-size: 15vw; 
+     }
+     .heroSectionContent p{
+         font-size: 8vw; 
+      }
+      .heroSectionContent a{
+         font-size: 8vw; 
+      }
+}
+
+
+@media only screen and (max-width:550px){
+    .slick-arrow{
+        top: -8%;
+       
+    }
+    .rightArrow {
+        left: 40%;
+    }
+    .leftArrow{
+        right: 40%;
+    }
+}
+
+@media only screen and (max-width:505px){
+    .sectiontionTitle h2{
+        font-size: 6.5vw;
+    }
+}
+
+@media only screen and (max-width:500px){
+    .navigation{
+        width: 100%;
+    }
+
+    
+     .mainHeroSection{
+         height: 700px;
+     }
+     .heroSectionContent h2{
+         margin: 30px 0px;
+     }
+
+     .mainTopHeader{
+         flex-direction: column;
+         align-items: center;
+    
+         
+         padding: 20px;
+     }
+
+    .section5Col{
+        width: 80% !important;
+    }
+
+    .section3Col1 .linkBtn {
+        left: 65% !important;
+
+        height: 38px;
+    }
+    .backgroundImge{
+        left: 86%;
+    }
+    
+
+    }
+
+@media only screen and (max-width:450px){
+    .footerLinks {
+        flex-wrap: wrap;
+    }
+    .footerlogo img{
+        display: block;
+        margin: auto;
+    }
+    .mainHeroSection{
+        height: 650px ;
+        background-position: 53%;
+    }
+    .playBtnOuterBox{
+        margin-top: 20px;
+    }
+    .section4, .section3, .section4, .section5, .section6{
+        margin-top: 30px !important;
+    }
+    .sectiontionTitle{
+        margin-bottom: 30px;
+    }
+    .parentSection{
+        margin-top: 30px;
+    }
+    .sectiontionTitle span{
+        width: 30px;
+       
+        top: 10px;
+        right: -10px;
+    }
+    .sectiontionTitle span img{
+        width: 100%;
+    }
+}
+
+@media  only screen and (max-width:400px){
+    .section1WithBackground{
+        background-size: 450% 100%;
+    }
+    .slick-arrow{
+        top: -8%;
+       
+    }
+    .rightArrow {
+        left: 35%;
+    }
+    .leftArrow{
+        right: 35%;
+    }
+    .section5Col .carouselItemContentBtn a{
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+    .section3Col1 .linkBtn {
+        height: 30px;
+    }
+    .playBtnOuterBox{
+        margin-top: 10px;
+    }
+    .backgroundImge{
+        left: 170%;
+    }
+    
+}
+
+
+
+@media only screen and (max-width:350px){
+    .backgroundImge{
+        left: 220%;
+    }
+}
+
+@media only screen and (max-width:320px){
+    .carouselBox .carouselItemContent{
+        flex-direction: column;
+        text-align: center;
+    }
+    .carouselBox .carouselItemContent a{
+        width: 100%;
+        margin-top: 10px;
+    }
+}
